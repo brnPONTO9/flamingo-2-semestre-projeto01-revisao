@@ -1,60 +1,12 @@
-/* 1. Declaração das variaveis de cor */
-:root{
-    --cor-fundo: #f0f2f5;
-    --cor-branco: #fffff;
-    --cor-texto-primario: #1c1e21;
-    --cor-texto-secundario: #606770;
-    --cor-borda: #dcdfe3;
-    --cor-acento: #007bff;
-}
-
-/* 2. Reset e Estilos Locais */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'sans-serif';
-    background: var(--cor-fundo);
-    /* Nesse trecho para baixo, os comandos serão para centralizar o card na página para visualização*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* 3. Estilo do componente principal: .card*/
-
-.card{
-    background-color: var(--cor-branco);
-    width: 320px;
-    border-radius: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* A mágica da animação começa aqui */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Ele vai esconder qualquer conteudo filho que possivelmente saia dos limites do card */
-    overflow: hidden;
-    text-align: center;
-}
-
-/* .4 Efeito hover no card */
-
-.card:hover{
-    transform: translateY(-10px); /* Mover o card em 10px para cima */
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-}
 
 /* 1. Declaração das Variáveis de cores */
 :root{
   --cor-fundo: #f0f2f5;
-  --cor-branco: #ffffff;
-  --cor-texto-primario: #1c1e21;
-  --cor-texto-secundario: #606770;
+  --cor-branco: #000000;
+  --cor-texto-primario: #ffffff;
+  --cor-texto-secundario: #ffffff;
   --cor-borda: #dcdfe3;
-  --cor-acento: #007bff;
+  --cor-acento: #9900ff;
 
 
 }
@@ -83,8 +35,8 @@ body{
 /* 3. Estilo do componente principal: .card */
 .card{
   background-color: var(--cor-branco);
-  width: 300px;
-  border-radius: 16px;
+  width: 400px;
+  border-radius: 75px;
   box-shadow: 0 8px 24px rgb(0, 0, 0, 0.1);
 
   /* A magina da animação começa aqui */
@@ -127,12 +79,14 @@ body{
   font-size: 1.5rem;
   color:  var(--cor-texto-primario);
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .card_title{
   font-size: 1rem; 
   color: var(--cor-texto-secundario);
   margin-bottom: 16px;
+  text-align: left;
 }
 
 /* 7. Estilo dos Ícones sociais(utilizando flexbox) */
